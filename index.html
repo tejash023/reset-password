@@ -1,17 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Reset Password</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        
+      <div class="reset-password">
+        <div class="heading-text">
+          <h2>Choose new password</h2>
+          <p>Almost done. Enter your new password and youre all set.</p>
+        </div>
+        <div class="password-field">
+          <label for="password">Create a password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter password"
+          />
+        </div>
+        <div class="confirm-password-field">
+          <label for="confirm-password">Confirm new password</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            placeholder="Enter password"
+          />
+        </div>
+
+        <div class="password-checks">
+          <p>
+            <i class="fa-solid fa-circle-check"></i> one lowercase character
+          </p>
+        </div>
+        <button class="reset-password-btn" type="submit">Reset password</button>
+      </div>
     </div>
-    
+
+    <script
+      src="https://kit.fontawesome.com/d031593f56.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
