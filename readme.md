@@ -20,3 +20,11 @@
   - At least one special character (!@#$%^&\*()\_+-=[]{}|;':",./<>?)
   - At least one numeric character (0-9)
   - Minimum length of 8 characters
+
+## Screenshots
+
+<img width="950" alt="image" src="https://user-images.githubusercontent.com/36923392/232332498-81c0a7f9-80d2-424f-9e8f-7a2acd6aeda5.png">
+
+<img width="948" alt="image" src="https://user-images.githubusercontent.com/36923392/232332544-60cb8f34-c497-4262-85d1-2e1c7e5a62b7.png">
+
+<img width="950" alt="image" src="https://user-images.githubusercontent.com/36923392/232332580-0fe38f77-8f30-4612-b162-f7df134df934.png">
