@@ -8,21 +8,27 @@
     <title>Reset Password</title>
   </head>
   <body>
+    <!-- Reset Password Container -->
     <div class="container">
-      <div class="reset-password">
+      <form class="reset-password">
+        <!-- Heading Text -->
         <div class="heading-text">
           <h2>Choose new password</h2>
           <p>Almost done. Enter your new password and youre all set.</p>
         </div>
+
+        <!--Password field -->
         <div class="password-field">
           <label for="password">Create a password</label>
           <input
             type="password"
-            id="password"
+            id="new-password"
             name="password"
             placeholder="Enter password"
           />
         </div>
+
+        <!--Confirm password field -->
         <div class="confirm-password-field">
           <label for="confirm-password">Confirm new password</label>
           <input
@@ -33,15 +39,71 @@
           />
         </div>
 
+        <!--Password Checks -->
         <div class="password-checks">
-          <p>
-            <i class="fa-solid fa-circle-check"></i> one lowercase character
-          </p>
+          <!--Password validation errors -->
+          <span id="password-length-error" style="display: none; color: red"
+            ><i class="fa-solid fa-circle-xmark"></i> 8 character minimum</span
+          >
+          <span id="password-lowercase-error" style="display: none; color: red">
+            <i class="fa-solid fa-circle-xmark"></i> atleast one lowercase
+            character</span
+          >
+          <span id="password-uppercase-error" style="display: none; color: red"
+            ><i class="fa-solid fa-circle-xmark"></i> atleast one uppercase
+            letter</span
+          >
+          <span
+            id="password-specialchar-error"
+            style="display: none; color: red"
+            ><i class="fa-solid fa-circle-xmark"></i> atleast one special
+            character</span
+          >
+          <span id="password-number-error" style="display: none; color: red"
+            ><i class="fa-solid fa-circle-xmark"></i> atleast one number</span
+          >
+          <span id="password-match-error" style="display: none; color: red"
+            ><i class="fa-solid fa-circle-xmark"></i> Passwords do not
+            match</span
+          >
+
+          <!--Password validation success -->
+          <span id="password-length-success" style="display: none; color: green"
+            ><i class="fa-solid fa-circle-check"></i> 8 character minimum</span
+          >
+          <span
+            id="password-lowercase-success"
+            style="display: none; color: green"
+          >
+            <i class="fa-solid fa-circle-check"></i> atleast one lowercase
+            character</span
+          >
+          <span
+            id="password-uppercase-success"
+            style="display: none; color: green"
+            ><i class="fa-solid fa-circle-check"></i> atleast one uppercase
+            letter</span
+          >
+          <span
+            id="password-specialchar-success"
+            style="display: none; color: green"
+            ><i class="fa-solid fa-circle-check"></i> atleast one special
+            character</span
+          >
+          <span id="password-number-success" style="display: none; color: green"
+            ><i class="fa-solid fa-circle-check"></i> atleast one number</span
+          >
+          <span id="password-match-success" style="display: none; color: green"
+            ><i class="fa-solid fa-circle-check"></i> Passwords match
+          </span>
         </div>
+
+        <!-- Submit Button -->
         <button class="reset-password-btn" type="submit">Reset password</button>
-      </div>
+      </form>
     </div>
 
+    <!--Font Awesome scripts for icons and App.js script -->
     <script
       src="https://kit.fontawesome.com/d031593f56.js"
       crossorigin="anonymous"
