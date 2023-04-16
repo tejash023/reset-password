@@ -60,6 +60,15 @@ input::placeholder {
   font-weight: 300;
 }
 
+input:focus {
+  box-shadow: none;
+  border: 2px solid #1351ce;
+}
+
+input:required:invalid {
+  border-color: red;
+}
+
 .reset-password-btn {
   border: none;
   outline: none;
