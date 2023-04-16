@@ -37,22 +37,20 @@ const passwordNumberSuccess = document.querySelector(
 );
 
 //Regex for password input validations
+const passwordLowercaseRegex = /[a-z]/;
+const passwordUppercaseRegex = /[A-Z]/;
+const passwordSpecialCharRegex = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+const passwordNumberRegex = /[0-9]/;
 const passwordLengthRegex = /^.{8,}$/;
-const passwordLowercaseRegex = /^(?=.*[a-z])/;
-const passwordUppercaseRegex = /^(?=.*[A-Z])/;
-const passwordSpecialCharRegex = /^(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?])/;
-const passwordNumberRegex = /^(?=.*\d)/;
 
 //event listener on form
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   //validation of password matching
-  if (
-    newPasswordInput.value !== "" &&
-    newPasswordInput.value !== confirmPasswordInput.value
-  ) {
+  if (newPasswordInput.value !== confirmPasswordInput.value) {
     passwordMatchError.style.display = "block";
+    return;
   } else {
     passwordMatchError.style.display = "none";
   }
