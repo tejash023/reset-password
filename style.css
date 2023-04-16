@@ -81,3 +81,25 @@ input::placeholder {
   font-size: 1.15rem;
   gap: 0.5rem;
 }
+
+@media only screen and (max-width: 900px) {
+  .reset-password {
+    width: 70%;
+    padding: 3%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .reset-password {
+    width: 85%;
+    gap: 0.7rem;
+    padding: 3%;
+  }
+
+  .heading-text h2 {
+    font-size: 1.5rem;
+  }
+  .heading-text p {
+    font-size: 1.25rem;
+  }
+}
